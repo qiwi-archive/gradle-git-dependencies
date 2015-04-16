@@ -31,5 +31,14 @@ dependencies {
 }
 */
 
+repositories {
+    mavenCentral()
+}
+
 
 apply plugin: 'groovy'
+
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.1.5"
+}
