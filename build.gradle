@@ -33,14 +33,19 @@ dependencies {
 
 repositories {
     mavenCentral()
+
 }
 
-
+apply plugin: 'java'
 apply plugin: 'groovy'
-
+apply plugin: 'java-gradle-plugin'
+apply plugin: 'maven'
 
 dependencies {
     compile "org.codehaus.groovy:groovy-all:2.1.5"
     compile gradleApi()
     compile localGroovy()
 }
+
+group = 'com.qiwi'
+version = '0.0.1'
