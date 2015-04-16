@@ -47,5 +47,19 @@ dependencies {
     compile localGroovy()
 }
 
+tasks.withType(JavaCompile) {
+    sourceCompatibility = "1.6"
+    targetCompatibility = "1.6"
+}
+
+tasks.withType(GroovyCompile) {
+    sourceCompatibility = '1.6'
+    targetCompatibility = '1.6'
+}
+
+compileJava.doFirst {
+    println "source compatibility " + sourceCompatibility
+}
+
 group = 'com.qiwi'
-version = '0.0.1'
+version = '0.0.2'

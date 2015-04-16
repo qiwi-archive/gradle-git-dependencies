@@ -17,7 +17,8 @@ class GitDependency implements Plugin<Project> {
 
 class GitDependencyExtension {
 
-    public static Dependency git(DependencyHandler dependencyHandler) {
-        return new GitArtifactDependency();
+    public static Dependency git(DependencyHandler dependencyHandler, String url, String branch,
+            String tag) {
+        return new GitArtifactDependency(url, branch, tag);
     }
 }

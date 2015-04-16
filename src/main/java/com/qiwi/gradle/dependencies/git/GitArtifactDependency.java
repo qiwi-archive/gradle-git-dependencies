@@ -7,6 +7,18 @@ import org.gradle.api.artifacts.Dependency;
  */
 public class GitArtifactDependency implements Dependency {
 
+    private final String mURL;
+
+    private final String mBranch;
+
+    private final String mTag;
+
+    public GitArtifactDependency(String URL, String branch, String tag) {
+        mURL = URL;
+        mBranch = branch;
+        mTag = tag;
+    }
+
     @Override
     public String getGroup() {
         return null;
@@ -31,5 +43,5 @@ public class GitArtifactDependency implements Dependency {
     public Dependency copy() {
         return null;
     }
-    
+
 }
