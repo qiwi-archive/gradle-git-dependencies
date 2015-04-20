@@ -43,6 +43,7 @@ apply plugin: 'maven'
 
 dependencies {
     compile "org.codehaus.groovy:groovy-all:2.1.5"
+    compile 'org.eclipse.jgit:org.eclipse.jgit:3.7.0.201502260915-r'
     compile gradleApi()
     compile localGroovy()
 }

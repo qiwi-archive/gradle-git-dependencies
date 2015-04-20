@@ -19,6 +19,7 @@ class GitDependencyExtension {
 
     public static Dependency git(DependencyHandler dependencyHandler, String url, String branch,
             String tag) {
-        return new GitArtifactDependency(url, branch, tag);
+        return new GitArtifactDependency(url, branch, tag, null);
+//                "${android.getSdkDirectory().getAbsolutePath()}");
     }
 }
